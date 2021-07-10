@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    background-color: #23054c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #440a94;
+    border-radius: 0.5em;
+    text-align: center;
+    padding: 1em;
+    width: 90%;
+    max-width: 450px;
+}
+
+h1 {
+    margin-top: 0;
+    color: #f4f4f4;
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+}
+
+form > label {
+    text-align: right;
+    margin-right: 0.4em;
+}
+
+form > input {
+    border-radius: 0.3em;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-style: none;
+    font-size: 1em;
+}
+
+form > * {
+    padding: 0.4em;
+    margin: 0.3em 0;
+}
+
+label[for="height"] {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+#height {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+#height-unit {
+    grid-column: 3 / 4;
+}
+
+form > span {
+    background-color: white;
+    color: black;
+    border-top-right-radius: 0.3em;
+    border-bottom-right-radius: 0.3em;
+    color: #565656;
+}
+
+#calculate {
+    grid-column: 1 / 4;
+}
+
+form > button {
+    margin: 1em auto;
+    font-size: 0.8em;
+    width: fit-content;
+}
+
+.result {
+    display: flex;
+    flex-direction: column;
+}
+
+.result > span {
+    margin: 0.2em 0;
+}
